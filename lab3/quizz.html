@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PW Lab2</title>
+    <meta name="author" content="Matheus Barcelos Rodrigues Alves">
+    <meta name="keywords" content="palavras chave">
+    <meta name="description" content="Website sobre Kyoto">
+    <link rel="shortcut icon" type="image/x-icon" href="images/jp_flag.ico">
+</head>
+
+<body style="background-color:	coral">
+    <h1>Kyoto</h1>
+    <img src="images/img.jpg">
+    <br>
+    <a href="../index.html">Home|</a>
+    <a href="index.html">Introdução|</a>
+    <a href="info.html">Informações|</a>
+    <a href="local.html">Localização|</a>
+    <a href="multimedia.html">Multimédia|</a>
+    <a href="quizz.html"><b>Quizz</b>|</a>
+    <a href="comentarios.html">Comentários</a>
+
+    <h3>Quizz</h3>
+
+    <form>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>Nome: <input type="text" name="nome" required></p>
+            <p>Apelido: <input type="text" name="apelido" required></p>
+            <p>Email: <input type="email" name="email" placeholder="abc@def.com" required></p>
+        </fieldset>
+    </form>
+
+    <form method="post" action="mailto:nome.apelido@gmail.com">
+        <fieldset>
+            <legend>Quizz sobre Kyoto</legend>
+
+            <label>Em qual país fica localizada a cidade de Kyoto?</label><br>
+            <textarea maxlength="5" type="text" name="message" rows="1" cols="10"></textarea>
+
+            <br>
+
+            <label><br>Qual das opções <b>NÃO</b> é atração de Kyoto?</label><br>
+            <input type="radio" id="fushimi" name="atracao" value="fushimi">
+            <label for="fushimi">Fushimi Inari-Taisha</label><br>
+            <input type="radio" id="eiffel" name="atracao" value="eiffel">
+            <label for="eiffel">Torre Eiffel</label><br>
+            <input type="radio" id="arashiyama" name="atracao" value="arashiyama">
+            <label for="arashiyama">Arashiyama</label><br>
+
+            <br>
+
+            <label>Quais das opões <b>SÃO</b> alfabetos japoneses?</label><br>
+            <input type="checkbox" id="alfabeto1" name="alfabeto1">
+            <label for="alfabeto1">Kanji</label><br>
+            <input type="checkbox" id="alfabeto2" name="alfabeto2">
+            <label for="alfabeto2">Haishoki</label><br>
+            <input type="checkbox" id="alfabeto3" name="alfabeto3">
+            <label for="alfabeto3">Hiragana</label><br>
+            <input type="checkbox" id="alfabeto4" name="alfabeto4">
+            <label for="alfabeto4">Katakana</label><br>
+
+            <br>
+
+            <label>Qual das opões <b>É</b> um distrito de Kyoto?</label><br>
+            <input list="distritos" name="distrito">
+            <datalist id="distritos">
+                <option value="Hadouken">
+                <option value="Gion">
+                <option value="Xiangling">
+                <option value="Hinata Shou">
+            </datalist>
+
+            <br><br>
+
+            <label>Qual a cor dos portões do templo Fushimi Inari-Taisha?<br></label>
+            <input type="color" id="cor_fushimi" name="cor_fushimi" value="#ff2851">
+
+            <br><br>
+
+            <label>Quantos templos tem em Kyoto?<br></label>
+            <input type="number" id="ano" name="ano" step="500">
+
+            <br><br>
+
+            <label>Quando foi fundada a cidade de Kyoto?</label>
+            <input type="range" min="700" max="800" name="taxa" value="0" oninput="taxaN.value = parseInt(taxa.value)">
+            <output name="taxaN" for="taxa">700</output>
+
+            <br><br>
+
+            <input type="submit" value = "Enviar por e-mail">
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
