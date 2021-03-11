@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PW Lab</title>
+    <meta name="author" content="Matheus Barcelos Rodrigues Alves">
+    <meta name="keywords" content="palavras chave">
+    <meta name="description" content="Website sobre Kyoto">
+    <link rel="shortcut icon" type="image/x-icon" href="images/jp_flag.ico">
+</head>
+
+<body style="background-color:	coral">
+    <header>
+        <h1>Kyoto</h1>
+        <figure>
+            <img src="images/img.jpg">
+        </figure>
+    </header>
+
+    <br>
+
+    <nav>
+        <a href="../index.html">Home|</a>
+        <a href="index.html">Introdução|</a>
+        <a href="info.html">Informações|</a>
+        <a href="local.html">Localização|</a>
+        <a href="multimedia.html">Multimédia|</a>
+        <a href="quizz.html">Quizz|</a>
+        <a href="comentarios.html"><b>Comentários</b>|</a>
+        <a href="html5-css.html">HTML</a>
+    </nav>
+
+    <main>
+        <h3>Comentários</h3>
+
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Área destinada a feedback sobre a página!</legend>
+
+                    <label>Ao utilizar o site conseguiu aprender sobre Kyoto?</label>
+                    <input type="text" id="geral" placeholder="Sim ou Não"></input>
+
+                    <br><br>
+
+                    <label>Clareza:</label>
+                    <input type="radio" id="clareza" value="Claro">Claro</input>
+                    <input type="radio" id="clareza" value="Médio">Médio</input>
+                    <input type="radio" id="clareza" value="Ruim">Ruim</input>
+
+                    <br><br>
+
+                    <label>Rigor:</label>
+                    <input type="radio" id="rigor" value="Ótimo">Ótimo</input>
+                    <input type="radio" id="rigor" value="Ok">Ok</input>
+                    <input type="radio" id="rigor" value="Ruim">Ruim</input>
+
+                    <br><br>
+
+                    <label>Precisão:</label>
+                    <input type="radio" id="precisao" value="Muito Preciso">Muito Preciso</input>
+                    <input type="radio" id="precisao" value="Mais ou Menos">Mais ou Menos</input>
+                    <input type="radio" id="precisao" value="Pouco Preciso">Pouco Preciso</input>
+
+                    <br><br>
+
+                    <label>Amplitude:</label>
+                    <input type="range" min="0" max="5" name="amp" value="0" oninput="ampN.value = parseInt(amp.value)">
+                    <output name="ampN" for="amp">0</output>
+
+                    <br><br>
+
+                    <label>Profundidade:</label>
+                    <input type="range" min="0" max="5" name="prof" value="0"
+                        oninput="profN.value = parseInt(prof.value)">
+                    <output name="profN" for="prof">0</output>
+
+                    <br><br>
+
+                    <label>De opiniões sobre o site:</label><br>
+                    <textarea maxlength="200" type="text" name="message" rows="10" cols="25"></textarea>
+
+                    <br><br>
+
+                    <input type="submit" value="Enviar">
+
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
