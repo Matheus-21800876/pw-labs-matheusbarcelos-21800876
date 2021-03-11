@@ -81,17 +81,17 @@
             <br><br>
 
             <label>Quantos templos tem em Kyoto?<br></label>
-            <input type="number" id="ano" name="ano" step="500">
+            <input type="number" id="ano" name="ano" step="500" min="0">
 
             <br><br>
 
             <label>Quando foi fundada a cidade de Kyoto?</label>
-            <input type="range" min="700" max="800" name="taxa" value="0" oninput="taxaN.value = parseInt(taxa.value)">
-            <output name="taxaN" for="taxa">700</output>
+            <input type="range" min="700" max="800" name="year" value="0" oninput="yearN.value = parseInt(year.value)">
+            <output name="yearN" for="year">0</output>
 
             <br><br>
 
-            <input type="submit" value = "Enviar por e-mail">
+            <input type="submit" value="Enviar">
 
         </fieldset>
     </form>
