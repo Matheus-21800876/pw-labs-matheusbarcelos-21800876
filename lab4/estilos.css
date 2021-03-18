@@ -1,0 +1,53 @@
+*{
+    font-family: cursive;
+    text-align: center;
+}
+
+body {
+    background-color: lightsalmon;
+    padding: 0;
+    margin: 0;
+}
+
+.emoji{
+    border-width:5px;  
+    border-style:inset;
+    background-color: coral;
+}
+
+li{
+    list-style-position: inside;
+    text-align: left;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main + footer{
+    margin-top: 20px;
+    background-color: burlywood;
+    font-size: medium;
+}
+
+nav a{
+    margin-right: 5px;
+}
+
+a:hover{
+    color:red;
+}
+
+a:active{
+    color:blue;
+}
+
+#table_stats{
+    background-color: sandybrown;
+}
+
+p::first-letter{
+    font-size: xx-large;
+    color: black;
+}
