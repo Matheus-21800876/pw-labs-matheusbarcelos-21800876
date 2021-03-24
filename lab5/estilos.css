@@ -81,7 +81,6 @@ aside img{
 
 .item5{
     display: grid;
-    background-color: beige;
     font-size: medium;
 }
 
@@ -109,6 +108,18 @@ aside img{
     align-items: center;
 }
 
+a:hover{
+    color:red;
+}
+
+a:active{
+    color:blue;
+}
+
 #box ul li{
+    margin-bottom: 20px;
+}
+
+fieldset{
     margin-bottom: 20px;
 }
